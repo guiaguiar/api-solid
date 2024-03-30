@@ -1,40 +1,39 @@
 {
   "name": "api-solid",
   "version": "1.0.0",
-  "description": "",
+  "description": "GymPass style app.",
   "main": "index.js",
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/guiaguiar/api-solid.git"
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/guiaguiar/api-solid/issues"
-  },
-  "homepage": "https://github.com/guiaguiar/api-solid#readme",
   "devDependencies": {
-    "@types/node": "20.11.30",
-    "@typescript-eslint/eslint-plugin": "7.4.0",
-    "@typescript-eslint/parser": "7.4.0",
-    "eslint": "^8.57.0",
-    "prisma": "5.11.0",
-    "tsup": "8.0.2",
-    "tsx": "4.7.1",
-    "typescript": "5.4.3",
-    "@types/bcryptjs": "2.4.2"
+    "@types/bcryptjs": "2.4.2",
+    "@types/node": "18.14.1",
+    "@vitest/coverage-c8": "0.28.5",
+    "@vitest/ui": "0.28.5",
+    "eslint": "8.34.0",
+    "prisma": "4.10.1",
+    "tsup": "6.6.3",
+    "tsx": "3.12.3",
+    "typescript": "4.9.5",
+    "vite": "5.2.7",
+    "vite-tsconfig-paths": "4.0.5",
+    "vitest": "0.28.5"
   },
   "dependencies": {
-    "@prisma/client": "5.11.0",
-    "dotenv": "16.4.5",
-    "fastify": "4.26.2",
-    "zod": "3.22.4",
-    "bcryptjs": "2.4.3"
+    "@prisma/client": "4.10.1",
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.0.3",
+    "fastify": "4.13.0",
+    "zod": "3.20.6"
   }
 }
