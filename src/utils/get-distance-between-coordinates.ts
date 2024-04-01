@@ -3,7 +3,6 @@ export interface Coordinate {
   longitude: number
 }
 
-// using Haversine formula
 export function getDistanceBetweenCoordinates(
   from: Coordinate,
   to: Coordinate,

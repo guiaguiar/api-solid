@@ -14,7 +14,6 @@ interface ValidateCheckInUseCaseResponse {
 
 export class ValidateCheckInUseCase {
   constructor(private checkInsRepository: CheckInsRepository) {}
-  
 
   async execute({
     checkInId,
